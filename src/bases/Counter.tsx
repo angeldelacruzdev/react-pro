@@ -1,7 +1,11 @@
 import { useState } from "react";
 
-const Counter = (props: { initialValue: number }) => {
-  const [counter, setCounter] = useState(props.initialValue);
+interface CounterProps {
+  initialValue?: number;
+}
+
+const Counter = ({ initialValue = 0 }: CounterProps) => {
+  const [counter, setCounter] = useState(initialValue);
 
   const handleCounter = () => {
     setCounter((prev) => prev + 1);
