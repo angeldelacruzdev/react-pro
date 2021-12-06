@@ -24,7 +24,7 @@ const CounterEffect = () => {
     }).to(counterElement.current, {
       y: 10,
       duration: 0.5,
-      ease: "ease.out",
+      ease: "bounce.out",
     });
   }, [counter]);
 
