@@ -30,7 +30,7 @@ const CounterEffect = () => {
 
   return (
     <div>
-      <h1>CounterEffect</h1>
+      <h1>Counter Hook</h1>
       <h2 ref={counterElement}> {counter}</h2>
       <button onClick={() => handleCounter()}>+1</button>
     </div>
